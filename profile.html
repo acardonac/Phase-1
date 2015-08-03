@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Phase 1: First Project</title>
+    <style type="text/css">
+    img.resize {max-width:75%; max-height:50%;}
+    </style>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  </head>
+  <body>
+  <div>
+  <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+    <div class="container-fluid">
+     <div class="navbar-header">
+       <a class="navbar-brand" href="index.html">
+         <img src="media/codetrotters_logo.png" class="img-rounded" width="70px" height= "70px" alt="Brand">
+       </a>
+       <ul class="list-inline">
+       <li id="navlinks"><a href="index.html">ABOUT</a></li>
+       <li id="navlinks"><a href="resume.html">RESUME</a></li>
+       <li id="navlinks"><a href="contact.html">CONTACT</a></li>
+       </ul>
+      </div>
+     </div>
+   </nav>
+   <!-- "Do or do not; there is no try." -->
+  <div class="profile-wrapper">
+   <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+      <div class="container-fluid profile-info">
+         <h1 class="profile-h1" color="black">My Story</h1>
+         <br />
+         <ul class="img-list">
+           <li>
+             <a href="#blockquote">
+               <img src="media/profile_img.jpg" width="300" height="300" />
+               <span class="text-content"><span>More about me</span></span>
+             </a>
+           </li>
+         </ul>
+         <br />
+         <ul class="img-social list-inline">
+           <li>
+             <a href="https://wwww.twitter.com/">
+               <img src="media/twitter-48.png" width="30" height="30" />
+             </a>
+           </li>
+           <li>
+             <a href="https://www.facebook.com/">
+               <img src="media/facebook-48.png" width="30" height="30" />
+             </a>
+           </li>
+           <li>
+             <a href="https://www.linkedin.com/">
+               <img src="media/linkedin-48.png" width="30" height="30" />
+             </a>
+           </li>
+           <li>
+             <a href="https://www.plus.google.com/">
+               <img src="media/googleplus-48.png" width="30" height="30" />
+             </a>
+           </li>
+         </ul>
+       </div>
+       <br />
+       <div class="profile-text">
+         <h1 text-align="center">Hi, I'm Alva Cardona!</h1>
+         <blockquote id="blockquote">Even though it’s been only three weeks since I started taking
+           web design courses at Codetrotters, I’ve always had the drive and desire to learn how to create
+           websites. My work slowly started taking me in that direction… After I graduated college,
+           almost every job I’ve had had to do with the Internet and the web, in one way or another.
+           I was even told by a colleague, early in my career, that I would be working on websites in
+           the future. Little did I know that I would not only be working on websites, but that I
+           would also be creating them.
+         </blockquote>
+         <p class="profile-p">My knowledge of the web and the Internet eventually grew, more and more
+           by the day. I started taking free online courses and training in Social Media, Graphic Design,
+           SEO, SEM, Blogging and CMS Platforms, AdWords, Ecommerce, Digital Marketing, UI/UX, and
+           eventually, Web Design. It didn’t take much time for me to realize that I needed to learn
+           those skills, as they are as invaluable as they're useful in this century. Almost every
+           business and media outlet use the Internet to reach and engage audiences. Also, all professions
+           related to Information Technology, Information Systems and Computer Science are in high
+           demand, and unfortunately, the job market is lacking in supply. That’s why I became
+           interested in studying web design, because it is a profession in high demand that rewards
+           those who pursue it. I’m becoming more and more curious and interested in web development
+           and programming languages as the course advances, and I will try my best to learn everything
+           my Codetrotters instructors have to teach me. </p>
+       </div>
+     </div>
+   </div>
+   <div class="container divider">
+     </div>
+    </div>
+   <footer>©2015 Alva Cardona. All rights reserved.</footer>
+   </div>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <a href="http://jquery.com/">jQuery</a>
+   <script src="jquery.js"></script>
+   <script>
+   $('a[href*=#]:not([href=#])').click(function() {
+   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+       || location.hostname == this.hostname) {
+
+       var target = $(this.hash);
+       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+                scrollTop: target.offset().top
+           }, 1000);
+           return false;
+       }
+   }
+});
+   </script>
+   <script src="js/bootstrap.min.js"></script>
+   </body>

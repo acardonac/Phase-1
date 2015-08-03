@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Phase 1: First Project</title>
+    <style type="text/css">
+    img.resize {max-width:75%; max-height:50%;}
+    </style>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <div width="auto" height="auto">
+    <div width="auto" height="auto">
+    <video class="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+      <source type="video/mp4" src="media/bigstock-closeup-of-business-woman-writ-56956313.mp4">
+      <source type="video/webm" src="media/bigstock-closeup-of-business-woman-writ-56956313.webm">
+      <source type="video/ogg" src="media/bigstock-closeup-of-business-woman-writ-56956313.ogg">
+    </video>
+     <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+       <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+            <img src="media/codetrotters_logo.png" class="img-rounded" width="70px" height= "70px" alt="Brand">
+          </a>
+          <ul class="list-inline">
+          <li id="navlinks"><a href="index.html">ABOUT</a></li>
+          <li id="navlinks"><a href="resume.html">RESUME</a></li>
+          <li id="navlinks"><a href="contact.html">CONTACT</a></li>
+          </ul>
+         </div>
+        </div>
+      </nav>
+      <div class="jumbotron jumbotron-text text-center">
+        <h1>Diary of a Codetrotter</h1>
+        <p>Welcome to the strange world of a web design student.</p>
+        <a href="#second-container"class="btn btn-default btn-lg" role="button">Learn more</a>
+        <!-- "Adventure. Excitement. A Codetrotter craves these things." -->
+      </div>
+    </div>
+    <div class="container-fluid" background-color="#F0F0F0">
+     <div class="second-container">
+      <div class="row" id="second-container">
+      	<div class="col-md-4 inner-padding">
+          <div class="view">
+               <img src="media/profile.jpg" />
+               <div class="mask">
+               <h2>My Background</h2>
+               <p>How did I become interested in web design and development?</p>
+               <a href="resume.html" class="info">Read More</a>
+               </div>
+          </div>
+      	</div>
+      	<div class="col-md-4 inner-padding">
+          <div class="view">
+               <img src="media/my-story.jpg" />
+               <div class="mask">
+               <h2>My Story</h2>
+               <p>Wish to know more about my journey and what it's like to learn code?</p>
+               <a href="profile.html" class="info">Read More</a>
+               </div>
+          </div>
+      	</div>
+        <div class="col-md-4 inner-padding">
+          <div class="view">
+               <img src="media/contact.jpg" />
+               <div class="mask">
+               <h2>My Contact Info</h2>
+               <p>Want to talk or ask me questions about my experience in Codetrotters?</p>
+               <a href="contact.html" class="info">Read More</a>
+               </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+      <footer>©2015 Alva Cardona. All rights reserved.</footer>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <a href="http://jquery.com/">jQuery</a>
+    <script src="jquery.js"></script>
+    <script>
+    $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
